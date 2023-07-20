@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .testing-class {
+    @apply gb-gray-800;
+  }
+  .text-area {
+    @apply w-full border-none resize-none focus:outline-none focus:ring-0 placeholder-gray-500;
+  }
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+            h-12 w-12 mt-2 mb-2 mx-auto shadow-lg 
+            bg-gray-800 text-green-500
+            hover:bg-green-600;
+  }
+  .user-message{
+    @apply max-w-md p-4 mb-5 rounded-lg self-end bg-blue-500 text-white;
+  }
+  .model-message{
+    @apply max-w-md p-4 mb-5 rounded-lg self-start bg-gray-200 text-black;
+  }
+  .chat-area {
+    @apply h-screen pb-24 w-full flex flex-col overflow-y-auto border border-gray-300 rounded p-5 bg-gray-100;
+  }
+  .type-area{
+    @apply h-24 w-full fixed bottom-0 flex justify-center items-center p-5 bg-white border-t border-gray-300;
+  }
+  .form-type-area{
+    @apply w-full flex justify-center items-center gap-4;
+  }
+}
